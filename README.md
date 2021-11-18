@@ -10,7 +10,7 @@ This example used a Virtual Machine Module with an associated Azure Application 
 
 ```
 module "iaas-public-rules" {
-  source                 = "github.com/github.com/redoceantechnology/terraform-azurerm-network-security-rules.git?ref=v1.0.0"
+  source                 = "github.com/redoceantechnology/terraform-azurerm-network-security-rules.git?ref=v1.0.0"
   resource_group_name    = module.resource_group.name
   network_security_group = module.virtual_network.subnets["iaas-public"].network_security_group_name
   allow_in_rules = {
