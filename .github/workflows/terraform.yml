@@ -15,7 +15,7 @@ jobs:
         args: fmt
 
     - name: Render terraform docs into README
-      uses: Dirrk/terraform-docs@v1.0.8
+      uses: terraform-docs/gh-actions@v1.0.0
       with:
         tf_docs_working_dir: .
         tf_docs_output_file: README.md
