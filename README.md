@@ -46,35 +46,6 @@ module "iaas-public-rules" {
 ```
 <br />
 
-<!--- BEGIN_TF_DOCS --->
-## Requirements
-
-No requirements.
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| azurerm | n/a |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| AllowAzureCloudCommunicationOutBound\_enabled | Enable OutBound port 443 to AzureCloud (Priority 110) | `bool` | `false` | no |
-| AllowGetSessionInformationOutBound\_enabled | Enable OutBound port 80/443 to Internet (Priority 100) | `bool` | `false` | no |
-| AllowNTPOutBound\_enabled | Enable OutBound NTP (123) to Internet (Priority 120) | `bool` | `false` | no |
-| AllowSSHInBound\_enabled | Enable InBound SSH from Internet (Priority 100) | `bool` | `false` | no |
-| allow\_in\_rules | Dynamic InBound rules, check out https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule | `map(any)` | `{}` | no |
-| allow\_out\_rules | Dynamic OutBound rules, check out https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule | `map(any)` | `{}` | no |
-| network\_security\_group | The name of the Network Security Group that we want to attach the rule to | `string` | n/a | yes |
-| resource\_group\_name | Resource group name | `string` | n/a | yes |
-
-## Outputs
-
-No output.
-
-<!--- END_TF_DOCS --->
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
